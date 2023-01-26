@@ -63,3 +63,4 @@ const decisionTree: DecisionNode = {
 stepTree(decisionTree, "yes");
 
 export { decisionTree, stepTree };
+export type { DecisionNode };

@@ -1,7 +1,7 @@
 import React, { use, useState } from "react";
 import Chat from "./components/Chat";
 import Controls from "./components/Controls";
-import { decisionTree, stepTree } from "./utils/tree";
+import { decisionTree } from "./utils/tree";
 
 export default function Home() {
   const [currentTree, setCurrentTree] = useState(decisionTree);
