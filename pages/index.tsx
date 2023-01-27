@@ -1,6 +1,6 @@
 import React, { use, useState } from "react";
-import Chat from "./components/Chat";
-import Controls from "./components/Controls";
+import Chat from "../components/Chat";
+import Controls from "../components/Controls";
 import { decisionTree } from "./utils/tree";
 
 export default function Home() {
