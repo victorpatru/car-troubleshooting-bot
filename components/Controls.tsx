@@ -1,5 +1,5 @@
 import React from "react";
-import { stepTree } from "../pages/utils/tree";
+import stepTree from "../pages/utils/tree";
 
 function Controls({ setUserAnswer, setCurrentTree, currentTree }: any) {
   const handleChange = (e: any) => {

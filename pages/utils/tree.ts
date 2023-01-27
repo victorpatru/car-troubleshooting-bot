@@ -11,14 +11,14 @@ function isLeafNode(node: DecisionNode) {
 /**
  * Function that takes a step and returns new tree
  */
-function stepTree(
+export default function stepTree(
   decisionTree: DecisionNode,
   step: "yes" | "no"
 ): DecisionNode | undefined {
   return step === "yes" ? decisionTree.yesNode : decisionTree.noNode;
 }
 
-const decisionTree: DecisionNode = {
+export const decisionTree: DecisionNode = {
   message: "Is the car silent when you turn the key?",
   yesNode: {
     message: "Are the battery terminals corroded?",
@@ -62,5 +62,4 @@ const decisionTree: DecisionNode = {
  */
 stepTree(decisionTree, "yes");
 
-export { decisionTree, stepTree };
 export type { DecisionNode };
